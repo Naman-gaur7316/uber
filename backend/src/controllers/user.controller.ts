@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import User from "../models/user.model";
-import { AuthRequest } from "../../types";
+import { AuthRequest } from "../types/types";
 import BlacklistModel from "../models/blackListToken.model";
 
 export async function userSignup(req: Request, res: Response): Promise<any> {
