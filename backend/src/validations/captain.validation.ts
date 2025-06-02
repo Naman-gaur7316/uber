@@ -12,7 +12,7 @@ export const captainSignupSchema = z.object({
   status: z.enum(["active", "inactive"]).default("inactive"),
   vehicleColor: z.string().min(3, "Color must be at least 3 characters long"),
   vehiclePlate: z.string().min(3, "Plate must be at least 3 characters long"),
-  vehicleCapacity: z.number().min(1, "Capacity must be at least 1"),
+  vehicleCapacity: z.coerce.number().int("capacity must be a positive number").min(1, "Capacity must be at least 1"),
   vehicleType: z.enum(["car", "motorcycle", "auto"]),
   lat: z.number().nullable().optional(),
   lng: z.number().nullable().optional(),

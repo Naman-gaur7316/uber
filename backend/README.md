@@ -268,7 +268,7 @@ The request body should be a JSON object containing the following fields:
     "vehicle": {
       "color": "VEHICLE_COLOR_HERE",
       "plate": "VEHICLE_PLATE_HERE",
-      "capacity": VEHICLE_CAPACITY_HERE,
+      "capacity": "VEHICLE_CAPACITY_HERE",
       "vehicleType": "VEHICLE_TYPE_HERE"
     },
     "location": {
